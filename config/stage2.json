@@ -1,0 +1,99 @@
+{
+    "name": "stage2",
+    "description": "Account/Storage/Gas",
+    "cases": [
+        {
+            "name": "account",
+            "transactions": [
+                {
+                    "data": "0x6050",
+                    "type": 2
+                },
+                {
+                    "data": "0x6050",
+                    "type": 1
+                },
+                {
+                    "data": "",
+                    "type": 2
+                },
+                {
+                    "data": "",
+                    "type": 1
+                }
+            ]
+        },
+        {
+            "name": "gas",
+            "transactions": [
+                {
+                    "data": "",
+                    "gas": 200000,
+                    "expected": {
+                        "status": 0
+                    }
+                },
+                {
+                    "data": "",
+                    "gas": 221000,
+                    "expected": {
+                        "status": 1
+                    }
+                },
+                {
+                    "to": "",
+                    "data": "",
+                    "gas": 2000000,
+                    "expected": {
+                        "status": 1
+                    }
+                },
+                {
+                    "data": "",
+                    "gas": 1999999,
+                    "expected": {
+                        "status": 1
+                    }
+                },
+                {
+                    "to": "",
+                    "data": "",
+                    "gas": 2000001,
+                    "expected": {
+                        "status": 0
+                    }
+                },
+                {
+                    "data": "",
+                    "gas": 5000000,
+                    "expected": {
+                        "status": 1
+                    }
+                },
+                {
+                    "data": "",
+                    "gas": 5000001,
+                    "expected": {
+                        "status":0
+                    }
+                }
+            ]
+        },
+        {
+            "package": "storage",
+            "version": "1.0",
+            "Description": "Storage Test",
+            "source": "",
+            "transactions":[
+                {
+                    "to": "",
+                    "data": "check_storage"
+                },
+                {
+                    "to": "",
+                    "data": "kill"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "name":"APITest",
+    "version": "1.0",
+    "Description": "API Test with local call",
+    "source": "KernelAPI.java",
+    "transactions":[
+        {
+            "method": "getAddress",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getCaller",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getOrigin",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getEnergyLimit",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getEnergyPrice",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getValue",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getData",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBlockTimestamp",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBlockNumber",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBlockEnergyLimit",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBlockCoinbase",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBlockDifficulty",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBalance",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getBalanceOfThisContract",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getCodeSize",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "getRemainingEnergy",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "log1",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "log2",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "log3",
+            "params": [],
+            "expected": ""
+        },
+        {
+            "method": "log4",
+            "params": [],
+            "expected": null
+        },
+        {
+            "method": "blake2b",
+            "params": [],
+            "expected": "0x110020a583efe8e56772fb6e55d46c0764fc82f53d8020dda3cdaac999c091077eb029"
+        },
+        {
+            "method": "sha256",
+            "params": [],
+            "expected": "0x11002062847a5eb98562287fb26bdef7016f1fa971809763a492966910adf71cb2d349"
+        },
+        {
+            "method": "keccak256",
+            "params": [],
+            "expected": "0x11002093043950827576176ac691f8c88b5754035462cd0e711a8fe0929127aa8f3e59"
+        },
+        {
+            "method": "edverify",
+            "params": [],
+            "expected": ""
+        }
+    ]
+}

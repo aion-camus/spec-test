@@ -1,0 +1,63 @@
+{
+  "name": "aion",
+  "displayName": "aion",
+  "description": "aion vscode plugin",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.helloaion",
+    "onCommand:extension.sendTx"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloaion",
+        "title": "Aion Org"
+      },
+      {
+        "command": "extension.sendTx",
+        "title": "sendTx"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "dependencies": {
+    "aion-rlp": "0.0.1",
+    "ethereumjs-common": "^1.0.0",
+    "ethereumjs-util": "^6.0.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.28",
+    "tslint": "^5.12.1",
+    "@types/node": "^10.12.21",
+    "@types/mocha": "^2.2.42"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aion-camus/vscode-aion.git"
+  },
+  "keywords": [
+    "aion",
+    "avm"
+  ],
+  "author": "Camus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aion-camus/vscode-aion/issues"
+  },
+  "homepage": "https://github.com/aion-camus/vscode-aion#readme"
+}
